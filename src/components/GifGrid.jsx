@@ -5,8 +5,6 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 export const GifGrid = ({category, onRemoveCategory}) => {
   const {images, loading, hasError} = useFetchGifs(category);
 
-  console.log({images, loading, hasError});
-
   return (
     <>
       <h3>{category}</h3>

@@ -25,9 +25,8 @@ export const useFetchGifs = (category) => {
 
 
   useEffect(() => { 
-    console.log('Peticionando...');
     loadGifs()
-  }, [category])
+  }, [])
   
   return {
     images,
